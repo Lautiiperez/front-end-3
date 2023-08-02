@@ -1,0 +1,45 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+}
+main{
+  display: flex;
+
+}
+.Producto {
+  height: 6em;
+  padding: 1rem;
+  will-change: filter;
+  transition: filter 300ms;
+  border-color: black;
+border-radius: 50%;
+  background-color: gray;
+  margin: 2%;
+  width: 80%;
+  height: 60%;
+
+}
+
+.Producto h1{
+  font-size: 180%;
+}
+
+.Producto h3{
+  font-size: 130%;
+}
+
+.Header,.Footer{
+  color: red;
+  background-color:  black
+  ;
+}
+
+
+.Producto:hover {
+  filter: drop-shadow(0 0 1em black);
+}
+
+
