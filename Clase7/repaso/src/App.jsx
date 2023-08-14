@@ -11,6 +11,10 @@ const addPatient= (patient)=> {
   setPacientes([...pacientes,patient]);
 }
 
+function borrar() {
+  setPacientes([]);
+}
+
   return (
 <div className="App">
 
@@ -18,6 +22,8 @@ const addPatient= (patient)=> {
 
   <Form onAddPatient={addPatient}/>
   <Turnos pacientes={pacientes}/>
+
+  <button onClick={borrar}>Borrar lista</button>
 
 </div>
   )
