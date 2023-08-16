@@ -15,7 +15,7 @@
 }
 
 h4 {
-margin-top: -11%;
+margin-top: -17%;
 
   color: red
 }
@@ -24,19 +24,24 @@ form {
   display: block;
   flex-direction: column;
   align-items: center;
+  background-color: gray;
+
 }
 
 form button {
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 input {
-  width: 100%; 
+  width: 90%; 
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   margin: 2px;
+  margin-top: 10px;
 }
+
 .titulo{
-  margin-top: 12%;
+  margin-top: 15%;
 }
