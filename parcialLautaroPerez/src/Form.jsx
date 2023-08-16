@@ -8,7 +8,10 @@ function Form({onAddPatient}){
 
     const handleSubmit = (e)=>{
         e.preventDefault();
-        if(nombre.length >= 3 && medicamento.length >=6 ){
+
+        const nombreSinEspacios = nombre.trim();
+  
+  if (nombreSinEspacios.length >= 3 && medicamento.length >=6 ){
             onAddPatient({nombre,medicamento});
             setNombre("");
             setMedicamento("");
