@@ -11,7 +11,7 @@ function Form({onAddPatient}){
         if(nombre.length >= 3 && medicamento.length >=6 ){
             onAddPatient({nombre,medicamento});
             setNombre("");
-            setApellido("");
+            setMedicamento("");
         }else {
             onAddPatient("error")
         }
