@@ -10,7 +10,7 @@ function Form({onAddPatient}){
         e.preventDefault();
 
   
-  if (nombre.length >= 3 && nombre.indexOf(" ") === 0 && medicamento.length >=6 ){
+  if (nombre.length >= 3 && !nombre.indexOf(" ") === 0 && medicamento.length >=6 ){
             onAddPatient({nombre,medicamento});
             setNombre("");
             setMedicamento("");
