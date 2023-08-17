@@ -9,9 +9,8 @@ function Form({onAddPatient}){
     const handleSubmit = (e)=>{
         e.preventDefault();
 
-        const nombreSinEspacios = nombre.trim();
   
-  if (nombreSinEspacios.length >= 3 && medicamento.length >=6 ){
+  if (nombre.length >= 3 && nombre.indexOf(" ") === 0 && medicamento.length >=6 ){
             onAddPatient({nombre,medicamento});
             setNombre("");
             setMedicamento("");
