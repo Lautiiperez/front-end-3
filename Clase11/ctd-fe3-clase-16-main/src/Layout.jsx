@@ -6,7 +6,7 @@ function Layout(){
             <nav>
                 <ul>
                     <li> <Link to="/">Home</Link> </li>
-                    <li> <Link to="/Beer">Beer</Link> </li>
+                    
                     <li> <Link to="/Contacto">Contacto</Link> </li>
                 </ul>
             </nav>

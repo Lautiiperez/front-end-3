@@ -10,11 +10,13 @@ function App() {
       <h1>Mas que solo bebidas, festejemos el encuentro.</h1> 
       <BrowserRouter>
         <Routes>
-        <Route path="/" element={<Layout/>} >
-          <Route index element={<Home/>} />
-          <Route path="Beer" element={<Beer/>} />
-          <Route path="Contacto" element={<Contacto/>} />
-        </Route>
+          <Route path="/" element={<Layout/>} >
+            <Route index element={<Home/>} />
+            <Route path="Beer" element={<Beer/>}>
+              <Route path=":id" element={<Beer/>}/>
+            </Route>
+            <Route path="Contacto" element={<Contacto/>} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
